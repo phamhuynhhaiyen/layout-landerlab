@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/layout-landerlab/static/css/main.5f725b8c.chunk.css",
+    "main.js": "/layout-landerlab/static/js/main.e3b580eb.chunk.js",
+    "main.js.map": "/layout-landerlab/static/js/main.e3b580eb.chunk.js.map",
+    "runtime-main.js": "/layout-landerlab/static/js/runtime-main.0861e73f.js",
+    "runtime-main.js.map": "/layout-landerlab/static/js/runtime-main.0861e73f.js.map",
+    "static/js/2.bc0fb791.chunk.js": "/layout-landerlab/static/js/2.bc0fb791.chunk.js",
+    "static/js/2.bc0fb791.chunk.js.map": "/layout-landerlab/static/js/2.bc0fb791.chunk.js.map",
+    "index.html": "/layout-landerlab/index.html",
+    "static/css/main.5f725b8c.chunk.css.map": "/layout-landerlab/static/css/main.5f725b8c.chunk.css.map",
+    "static/js/2.bc0fb791.chunk.js.LICENSE.txt": "/layout-landerlab/static/js/2.bc0fb791.chunk.js.LICENSE.txt",
+    "static/media/domain01.da7e15bc.svg": "/layout-landerlab/static/media/domain01.da7e15bc.svg",
+    "static/media/domain02.ded73684.svg": "/layout-landerlab/static/media/domain02.ded73684.svg",
+    "static/media/domain03.aab04ff2.svg": "/layout-landerlab/static/media/domain03.aab04ff2.svg",
+    "static/media/img01.2ea605b6.png": "/layout-landerlab/static/media/img01.2ea605b6.png",
+    "static/media/img02.76fec0bd.png": "/layout-landerlab/static/media/img02.76fec0bd.png",
+    "static/media/img03.1ab3de34.png": "/layout-landerlab/static/media/img03.1ab3de34.png",
+    "static/media/img04.41f8afa6.png": "/layout-landerlab/static/media/img04.41f8afa6.png",
+    "static/media/img05.2a4b188e.png": "/layout-landerlab/static/media/img05.2a4b188e.png",
+    "static/media/img_contact.d86534fd.svg": "/layout-landerlab/static/media/img_contact.d86534fd.svg",
+    "static/media/img_hero.b5bd5087.png": "/layout-landerlab/static/media/img_hero.b5bd5087.png",
+    "static/media/img_logo.25295995.svg": "/layout-landerlab/static/media/img_logo.25295995.svg",
+    "static/media/img_logo02.2ad27682.svg": "/layout-landerlab/static/media/img_logo02.2ad27682.svg",
+    "static/media/performance.92ceb7f4.svg": "/layout-landerlab/static/media/performance.92ceb7f4.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0861e73f.js",
+    "static/js/2.bc0fb791.chunk.js",
+    "static/css/main.5f725b8c.chunk.css",
+    "static/js/main.e3b580eb.chunk.js"
+  ]
+}
