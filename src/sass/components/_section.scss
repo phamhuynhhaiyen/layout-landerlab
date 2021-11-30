@@ -1,0 +1,46 @@
+.section{
+    @include flex(center,center);
+    padding: 8rem 0;
+    font-size:1.6rem;
+    gap:3rem;
+    margin: 0 13%;
+
+    @include tablet{
+        margin: 0 4rem;
+    }
+
+    @include mobile{
+        flex-direction: column;
+        margin: 0 2rem;
+    }
+
+    &__image{
+        position: relative;
+    }
+
+    &__content{
+        max-width:35%;
+
+        @include mobile{
+            max-width:100%;
+        }
+        h1{
+            font-size:4.4rem;
+        }
+        p{
+            color:$secondary-color;
+        }
+        a{
+            color: $pink;
+            font-weight:600;
+            font-size:1.8rem;
+            transition:0.2s linear;
+            i{
+                font-size:1.2rem;
+            }
+            &:hover{
+                color: $main-bg;
+            }
+        }
+    }
+}

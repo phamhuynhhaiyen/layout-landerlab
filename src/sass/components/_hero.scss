@@ -1,0 +1,96 @@
+.hero{
+    @include flex(center, center);
+    padding: 8rem 0;
+    margin-top:4rem;
+    gap:4rem;
+    font-size:1.8rem;
+
+    @include tablet{
+        width: 100%;
+        padding: 8rem 4rem;
+    }
+
+    @include tablet-small{
+        flex-direction: column;
+        padding: 8rem 2rem;
+    }
+
+    &__content{
+        padding-left: 13%;
+        width: 43%;
+
+        @include tablet{
+            padding-left: 0;
+            flex:1;
+        }
+        @include tablet-small{
+            width: 100%;
+        }
+
+        &__title{
+            position: relative;
+            h1{
+                margin-bottom: 0.5rem;
+            }
+            &__dynamic-text{
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 40px;
+                display: flex;
+                flex-direction: column;
+                margin-left: 110px;
+                overflow: hidden;
+                span{
+                    position: relative;
+                    top:0;
+                    animation: slide 12s steps(4) infinite;
+
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        height:100%;
+                        width: 100%;
+                        background:#fff;
+                        animation: typing 3s steps(10) infinite
+                    }
+                }
+            }
+        }
+        
+        p{
+            color: $secondary-color;
+        }
+        button{
+            color: #fff;
+            font-size:1.8rem;
+            font-weight: 600;
+            background-color: $main-bg;
+            padding:1.5rem 6rem;
+            cursor: pointer;
+
+            @include tablet-small{
+                width: 100%;
+            }
+        }
+    }
+
+    &__image{
+        @include tablet{
+            flex:1;
+        }
+    }
+}
+
+@keyframes slide{
+    100%{
+        top:-175px;
+    }
+}
+
+@keyframes typing{
+    40%,60%{
+        left:calc(100% + 30px)
+    }
+}

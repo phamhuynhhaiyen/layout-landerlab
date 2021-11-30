@@ -1,0 +1,40 @@
+.footer{
+    padding-top: 0;
+    padding-bottom: 0;
+
+    &__logo{
+        text-align: center;
+        img{
+            width: 180px;
+        }
+    }
+
+    &__link{
+        @include flex(center,center);
+        flex-wrap: wrap;
+        gap:2.5rem;
+        padding: 3rem 0;
+        border-bottom: 1px solid $border;
+
+        a{
+            font-size:1.8rem;
+            font-weight: 700;
+            color:$grey;
+            &:hover{
+                color: $main-color;
+            }
+        }
+    }
+
+    &__bottom{
+        @include flex(center,space-between);
+        padding: 3rem 0;
+        color:$secondary-color;
+
+        i{
+            margin-left: 1rem;
+            font-size:1.8rem;
+            color:$secondary-color;
+        }
+    }
+}

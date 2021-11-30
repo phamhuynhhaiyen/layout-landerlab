@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+html{
+    font-size:62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:sans-serif;
+    color: $main-color;
+}
+
+li{
+    list-style-type: none;
+}
+
+img{
+    width: 100%;
+}
+h1, h2, h3, h4, h5, h6, p{
+    margin-bottom: 2.5rem;
+}
+h1{
+    font-size:3.75rem;
+}
+p{
+    line-height:1.5;
+}
+
+section{
+    padding: 8rem 13%;
+    font-size:1.6rem;
+
+    @include tablet{
+        padding: 8rem 4rem;
+    }
+    @include mobile{
+        padding: 8rem 2rem;
+    }
+}
+
+@each $color, $var in $colors {
+    .color-#{$color}{
+        color: #{$var};
+    }
+}

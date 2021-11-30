@@ -1,0 +1,299 @@
+.pricing{
+    background-color: $secondary-bg;
+    color:#fff;
+    height:142rem;
+    margin-bottom: 40rem;
+
+
+    @include tablet-small{
+        margin-bottom:5rem;
+        height:auto;
+    }
+
+    h1{
+        text-align: center
+    }
+
+    p{
+        margin-bottom: 0.5rem;
+        color: $primary-color;
+        font-weight: 700;
+    }
+
+    &__table{
+        background: #fff;
+        color: $main-color;
+        box-shadow: $box-shadow;
+
+        @include tablet-small{
+            display: none;
+        }
+
+        &__header{
+            display: flex;
+            flex-wrap: wrap;
+            position: sticky;
+            top: 6rem;
+            border-bottom: 1px solid $border;
+            background: #fff;
+            box-shadow: $box-shadow;
+            z-index: 1;
+
+            &__item{
+                @include flex(center,center);
+                flex-direction: column;
+                flex:1;
+                border-right: $border solid 1px;
+                padding: 3rem 0;
+
+                &__switch{
+                    
+                    background: rgba(181,184,209,.3);
+                    padding: 0.3rem;
+                    border-radius:4rem;
+
+                    &__container{
+                        display: flex;
+                        position: relative;
+                        cursor: pointer;
+                        color: #707387;
+
+                        &.yearly-active{
+                            &:before{
+                                left:50%;
+                            }                           
+                        }
+
+                        &.yearly-active &__yearly{
+                           color: $main-bg;
+
+                        }
+                        &.yearly-active &__monthly{
+                            color: #707387;
+ 
+                        }
+
+                        &:before{
+                            content: "";
+                            background: #fff;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 50%;
+                            height: 100%;
+                            z-index: 0;
+                            border-radius:4rem;
+                            transition: all 0.2s ease-in-out;
+                        }
+    
+                        span{
+                            font-weight: 700;
+                            padding: 0.7rem 2rem;
+                            font-size:1.7rem;
+                            //color: #707387;
+                            line-height:1.35;
+                            z-index: 1;
+                        }
+                        &__monthly{
+                            color: $main-bg;
+ 
+                        }
+                    }
+                }
+
+                h3, h1, p{
+                    margin-bottom: 1rem;
+                }
+                p{
+                    font-weight: 700;
+                    color:$primary-color;
+                }
+                button{
+                    padding: 1.2rem 4rem;
+                    font-size:1.4rem;
+                    background:#fff;
+                    color:$grey;
+                    font-weight: 700;
+                    border-radius: 100px;
+                    cursor: pointer;
+                    transition: all 0.2s linear;
+
+                    &:hover{
+                        color: #fff;
+                        background:$main-bg;
+                        border: $main-bg solid 1px !important;
+                    }
+                }
+
+
+
+            }
+        }
+
+        &__body{
+            &__row{
+                display: flex;
+
+                &__title{
+                    flex:1;
+                    padding: 3rem 2rem;
+                    border-bottom: 1px solid $border;
+                    border-right: 1px solid $border;
+                    font-weight: 700;
+                    color: $secondary-color;
+                    &.last{
+                        border-bottom: none;
+                    }
+                }
+
+                &__cell{
+                    flex:1;
+                    text-align: center;
+                    padding: 3rem 2rem;
+                    border-right: 1px solid $border;
+                    color: $main-bg;
+                    font-size:2.5rem;
+                    font-weight: 700;
+
+                    &:last-child{
+                        border-right: 1px solid #fff;
+                    }
+
+                    i{
+                        font-size:1.5rem;
+                        color: #fff;
+                        width: 30px;
+                        height: 30px;
+                        line-height: 30px;
+                        background-color: $pink;
+                        border-radius: 50%;
+                       
+                    }
+                }
+            }
+        }
+    }
+
+    &__swicth-mobile{
+        display: none;
+        background: #333b6b;
+        padding: 0.5rem;
+        border-radius:4rem;
+
+        @include tablet-small{
+            display: inherit;
+        }
+
+        &__container{
+            display: flex;
+            position: relative;
+            cursor: pointer;
+            color: #707387;
+
+            &.yearly-active{
+                &:before{
+                    left:50%;
+                }                           
+            }
+            &.yearly-active &__yearly{
+                color: $main-bg;
+            }
+
+            &.yearly-active &__monthly{
+                color: #707387;
+            }
+
+            &:before{
+                content: "";
+                background: #fff;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 50%;
+                height: 100%;
+                z-index: 0;
+                border-radius:4rem;
+                transition: all 0.2s ease-in-out;
+            }
+    
+            span{
+                font-weight: 700;
+                padding: 0.7rem 2rem;
+                font-size:1.7rem;
+                text-align: center;
+                line-height:1.35;
+                z-index: 1;
+                width: 50%;
+            }
+            &__monthly{
+                color: $main-bg;
+            }
+        }
+       
+    }
+
+    &__card{
+        @include tablet-small{
+            display: inherit;
+        }
+        display: none;
+        margin-top: 4rem;
+        background: #fff;
+        color: $main-color;
+
+        &__header{
+            text-align: center;
+            padding: 3rem 0;
+            
+            h3{
+                font-size:4rem;
+                margin-bottom: 1rem;
+                margin-top:3rem;
+            }
+
+            button{
+                padding: 1.2rem 7rem;
+                font-size:2rem;
+                background:#fff;
+                color:$grey;
+                font-weight: 700;
+                border-radius: 100px;
+                cursor: pointer;
+                transition: all 0.2s linear;
+
+                &:hover{
+                    color: #fff;
+                    background:$main-bg;
+                    border: $main-bg solid 1px !important;
+                }
+            }
+        }
+        hr{
+            width: 100%;
+            border-top: 1px solid rgba(0,0,0,.1);
+        }
+
+        &__item{
+            padding:2.5rem 2rem;
+            @include flex(center, space-between);
+            color: $secondary-color;
+
+            &__right{
+                font-size:2.5rem;
+                font-weight: 700;
+                color: $main-bg;
+
+                i{
+                    font-size:1.5rem;
+                    color: #fff;
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                    background-color: $pink;
+                    border-radius: 50%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

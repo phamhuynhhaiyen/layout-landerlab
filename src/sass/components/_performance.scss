@@ -1,0 +1,43 @@
+.performance{
+    background: $secondary-bg;
+    color: #fff;
+
+    &__container{
+        margin: 0 10rem;
+
+        @include mobile{
+            margin: 0;
+        }
+    }
+
+    &__title{
+        text-align: center;
+        p{
+            color: $primary-color;
+        }
+    }
+
+    &__image{
+        margin: 3rem 0;
+    }
+    
+    &__box{
+        display: flex;
+        gap:1.5rem;
+        flex-wrap: wrap;
+
+        &__item{
+            flex: 1 15rem;
+            padding: 3rem 0;
+            text-align: center;
+            p{
+                font-size:1.2rem;
+                font-weight: 600;
+                margin-bottom:0.5rem;
+            }
+            h1{
+                margin: 0;
+            }
+        }
+    }
+}
