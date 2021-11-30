@@ -7,8 +7,8 @@ const Layout = () => {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" caseSensitive={false} element={<Home />} />
-                <Route path="/login" caseSensitive={false} element={<Login />} />
+                <Route path="/layout-landerlab" index element={<Home />} />
+                <Route path="/login" element={<Login />} />
             </Routes>
         </BrowserRouter>
     )
